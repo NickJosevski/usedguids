@@ -12,10 +12,6 @@ Throw away those old paper based systems.
 
 [Nick's complete post](http://blog.nick.josevski.com/2012/10/28/playing-with-appharbor-twitter-and-webapi) on this.
 
-## API endpoint
-
-  http://usedguids.apphb.com/api/UsedGuid
-  
 ## The Code
   - This version of the code runs with Entity Framework
   - Makes use of TweetSharp (which as of 2016 still works)
