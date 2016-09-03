@@ -15,6 +15,12 @@ Throw away those old paper based systems.
 ## API endpoint
 
   http://usedguids.apphb.com/api/UsedGuid
+  
+## The Code
+  - This version of the code runs with Entity Framework
+  - Makes use of TweetSharp (which as of 2016 still works)
+  - Further upgrades are not available on this public version of the code yet.
+  - Please submit bugs, don't get my UsedGuid twitter account banned  ;)
 
 ## Usage
 
