@@ -1,28 +1,172 @@
-﻿<header>
-    <div class="content-wrapper">
-            <p class="site-title">
-                <a href="~/">Your one stop shop, for used guid reporting.<br/></a>
-                
-            </p>
-    </div>
-</header>
-<div id="body">
-    <div class="main-content">
-    <div class="how-to-use">
-        <h3>How to use</h3> <a href="http://bit.ly/TwitterGuids">https://gist.github.com/3964492</a>
-        <br/>
-        <h3>The 'feed'</h3> <a href="https://twitter.com/UsedGuid">https://twitter.com/UsedGuid</a>
-    </div>
-        <div class="centered">
-            <img src="http://lh6.googleusercontent.com/-Z5VkwM4emSc/Tt_qtYONfmI/AAAAAAAAAG8/s768GFbJAPU/s954/guidbook.JPG"/>
-        </div>
-    </div>
-</div>
+﻿<!DOCTYPE HTML>
+<!--
+    Miniport by HTML5 UP
+    html5up.net | @@ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>Miniport by HTML5 UP</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="~/Content/assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="~/Content/assets/css/main.css" />
+    <!--[if lte IE 8]><link rel="stylesheet" href="~/Content/assets/css/ie8.css" /><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="~/Content/assets/css/ie9.css" /><![endif]-->
+</head>
+<body>
 
-<footer class="footer">
-    <div class="content-wrapper">
-        <div class="float-left">
-            Created by <a href="https://twitter.com/NickJosevski">@@NickJosevski</a>
-        </div>
+    <!-- Nav -->
+    <nav id="nav">
+        <ul class="container">
+            <li><a href="#top">Welcome</a></li>
+            <li><a href="#services">What we do</a></li>
+            <li><a href="#api">Api</a></li>
+            <li><a href="#contact">More Details</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home -->
+    <div class="wrapper style1 first">
+        <article class="container" id="top">
+            <div class="row">
+                <div class="4u 12u(mobile)">
+                    <span class="image fit"><img src="http://lh6.googleusercontent.com/-Z5VkwM4emSc/Tt_qtYONfmI/AAAAAAAAAG8/s768GFbJAPU/s954/guidbook.JPG" alt="" /></span>
+                </div>
+                <div class="8u 12u(mobile)">
+                    <header>
+                        <h1>Hi. This is <strong>Used Guid</strong>.</h1>
+                    </header>
+                    <p>We're <strong>100% guids 100% of the time</strong>, a one stop shop, for used guid reporting.</p>
+                    <a href="#services" class="button big scrolly">See our Services</a>
+                </div>
+            </div>
+        </article>
     </div>
-</footer>
+
+    <!-- Work -->
+    <div class="wrapper style2">
+        <article id="services">
+            <header>
+                <h2>Here are our services.</h2>
+                <p></p>
+            </header>
+            <div class="container">
+                <div class="row">
+                    <div class="4u 12u(mobile)">
+                        <section class="box style1">
+                            <span class="icon featured fa-comments-o"></span>
+                            <h3>Guid Chat</h3>
+                            <p>Love to talk about Guids? Guess what? We do too. Drop us a line.</p>
+                        </section>
+                    </div>
+                    <div class="4u 12u(mobile)">
+                        <section class="box style1">
+                            <span class="icon featured fa-camera-retro"></span>
+                            <h3>Guid Capture</h3>
+                            <p>Logging, logging, logging. Storage, storage, storage.</p>
+                        </section>
+                    </div>
+                    <div class="4u 12u(mobile)">
+                        <section class="box style1">
+                            <span class="icon featured fa-thumbs-o-up"></span>
+                            <h3>Guid Lookup</h3>
+                            <p>Tell us your guid we'll make sure it doesn't get reused.</p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <p>Ready, to get started?</p>
+                <a href="#api" class="button big scrolly">See the API calls.</a>
+            </footer>
+        </article>
+    </div>
+
+    <!-- API -->
+    <div class="wrapper style3">
+        <article id="api">
+            <header>
+                <h2>Api Calls</h2>
+                <p>Here are 2 examples Curl and jQuery, for the full technical details and more options <a href="https://github.com/NickJosevski/usedguids">see here.</a></p>
+            </header>
+            <div class="container">
+                <div class="row">
+                    <div class="12u">
+                        <h3>Curl</h3>
+
+                        <div class="12u 12u(mobile)">
+                            <section class="box style1">
+                                <pre style="text-align:left;">
+curl http://usedguids.apphb.com/api/UsedGuid \
+    -d Guid="64b798cb-1013-48bb-8f30-474e35fbba7a" \
+    -d UsedBy="CurlTest" \</pre>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="12u">
+                        <h3>jQuery</h3>
+                        <div class="12u 12u(mobile)">
+                            <section class="box style1">
+                                <pre style="text-align:left;">
+    $.ajax({
+        type: 'POST',
+        dataType: 'json',
+        contentType: 'application/json; charset=utf-8',
+        url: 'http://usedguids.apphb.com/api/UsedGuid',
+        data: JSON.stringify({ Guid: '*your_guid*', UsedBy: '*your_name*' })
+    });</pre>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <p>Still need more info?</p>
+                <a href="#contact" class="button big scrolly">Get in touch</a>
+            </footer>
+        </article>
+    </div>
+
+    <!-- Contact -->
+    <div class="wrapper style4">
+        <article id="contact" class="container 75%">
+            <header>
+                <h2>Need more info?</h2>
+            </header>
+            <div>
+                <div class="row">
+                    <div class="12u">
+                        <h3>find Used Guid on ...</h3>
+                        <ul class="social">
+                            <li><a href="https://twitter.com/usedguid" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                            <li><a href="https://github.com/NickJosevski/usedguids" class="icon fa-github"><span class="label">Github</span></a></li>
+                        </ul>
+                        <hr />
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <ul id="copyright">
+                    <li>Service by <a href="https://twitter.com/NickJosevski">@@NickJosevski</a>. All rights reserved.</li>
+                    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </footer>
+        </article>
+    </div>
+
+    <!-- Scripts -->
+    <script src="~/Content/assets/js/jquery.min.js"></script>
+    <script src="~/Content/assets/js/jquery.scrolly.min.js"></script>
+    <script src="~/Content/assets/js/skel.min.js"></script>
+    <script src="~/Content/assets/js/skel-viewport.min.js"></script>
+    <script src="~/Content/assets/js/util.js"></script>
+    <!--[if lte IE 8]><script src="~/Content/assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="~/Content/assets/js/main.js"></script>
+
+</body>
+</html>

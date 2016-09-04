@@ -211,6 +211,29 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="500Error.html" />
+    <Content Include="Content\assets\css\font-awesome.min.css" />
+    <Content Include="Content\assets\css\ie8.css" />
+    <Content Include="Content\assets\css\ie9.css" />
+    <Content Include="Content\assets\css\images\bg.png" />
+    <Content Include="Content\assets\css\images\ie\grad0-20.svg" />
+    <Content Include="Content\assets\css\main.css" />
+    <Content Include="Content\assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\assets\js\ie\html5shiv.js" />
+    <Content Include="Content\assets\js\ie\PIE.htc" />
+    <Content Include="Content\assets\js\ie\respond.min.js" />
+    <Content Include="Content\assets\js\jquery.min.js" />
+    <Content Include="Content\assets\js\jquery.scrolly.min.js" />
+    <Content Include="Content\assets\js\main.js" />
+    <Content Include="Content\assets\js\skel-viewport.min.js" />
+    <Content Include="Content\assets\js\skel.min.js" />
+    <Content Include="Content\assets\js\util.js" />
+    <Content Include="Content\images\pic00.jpg" />
+    <Content Include="Content\images\pic01.jpg" />
+    <Content Include="Content\images\pic02.jpg" />
+    <Content Include="Content\images\pic03.jpg" />
+    <Content Include="Content\images\pic04.jpg" />
+    <Content Include="Content\images\pic05.jpg" />
+    <Content Include="Content\images\pic06.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <EntityDeploy Include="CloudDb.edmx">
@@ -238,7 +261,6 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Content\Site.css" />
     <Content Include="Images\accent.png" />
     <Content Include="Images\bullet.png" />
     <Content Include="Images\heroAccent.png" />
@@ -269,6 +291,20 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\assets\fonts\FontAwesome.otf" />
+    <Content Include="Content\assets\sass\ie8.scss" />
+    <Content Include="Content\assets\sass\ie9.scss" />
+    <Content Include="Content\assets\sass\libs\_functions.scss" />
+    <Content Include="Content\assets\sass\libs\_mixins.scss" />
+    <Content Include="Content\assets\sass\libs\_skel.scss" />
+    <Content Include="Content\assets\sass\libs\_vars.scss" />
+    <Content Include="Content\assets\sass\main.scss" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
