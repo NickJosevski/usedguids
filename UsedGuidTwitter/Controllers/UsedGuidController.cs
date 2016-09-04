@@ -13,13 +13,6 @@ namespace UsedGuidTwitter.Controllers
         private readonly IManageYourData _dataStore;
         private readonly ITweet _tweeter;
 
-        public UsedGuidController()
-        {
-            // TODO: implement an IoC container, like Autofac so we don't need this constructor
-            _dataStore = new DataStore();
-            _tweeter = new Tweeter();
-        }
-
         public UsedGuidController(IManageYourData dataStore, ITweet tweeter)
         {
             _dataStore = dataStore;
